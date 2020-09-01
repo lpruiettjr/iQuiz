@@ -1,0 +1,79 @@
+/* #myInput{
+
+    visibility: hidden;
+} */
+body{
+ text-align: center;
+ font-size: 200px;
+ font-family: 'Amatic SC';
+
+}
+
+
+h2{
+    position: center;
+    font size: 500px;
+    font-family: 'Amatic SC';
+
+}
+
+button{
+    
+    text-align: center;
+    position: center;
+    width:200px;
+    height:50px;
+   
+
+}
+
+.questions {
+    box-sizing: content-box;  
+    width: 540px;
+    height: 100px;
+    padding: 30px;  
+    border: 10px solid blue;
+    float: none;
+    margin: 0 auto;
+    font-family: 'Amatic SC';
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #box1{
+    height:200px;
+    width:300px;
+    background-color:red;
+    margin:0;
+    font-family: 'Amatic SC';
+    font-size: 40px;
+    }
+#box2{
+    height:200px;
+    width:300px;
+    background-color:green;
+    position:relative;
+    font-family: 'Amatic SC';
+    font-size: 40px;
+    /* left:320px;
+    bottom:300px; */
+    }
+ #box3{
+    height:200px;
+    width:300px;
+    background-color:yellow;
+    position:relative;
+    font-family: 'Amatic SC';
+    font-size: 40px;
+    /* bottom:280px; */
+    }
+#box4{
+    height:200px;
+    width:300px;
+    background-color:blue;
+    position:relative;
+    font-family: 'Amatic SC';
+    font-size: 40px;
+    /* left:320px;
+    bottom:580px; */
+    }
