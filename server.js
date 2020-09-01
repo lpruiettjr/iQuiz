@@ -1,21 +1,21 @@
-require(‘dotenv’).config();
+require('dotenv').config();
 
-const db = require('./db/db_configuration');
+var db = require('./db/db_configuration');
 
-const express = require('express');
+var express = require('express');
 
-const app = express();
+var app = express();
 
-const bodyParser = require('body-parser');
+var bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({extended:false}));
 
 app.use(bodyParser.json());
 
 
-const cors = require('cors');
+var cors = require('cors');
 
-const { response } = require('express');
+// var { response } = require('express');
 
 app.use(express.static('public'));
 app.use(cors());
@@ -27,7 +27,7 @@ app.use(cors());
 
 app.get('/api/iQuiz/:id', (req,res) => {
 
-    const id = Number(req.params.id);
+    var id = Number(req.params.id);
 
 db.query('SELECT * FROM questions WHERE id=$1',[id], (err,data) => {
     if (err) {
@@ -49,22 +49,21 @@ db.query('SELECT * FROM questions WHERE id=$1',[id], (err,data) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-app.listen(process.env.PORT,function() {
+app.listen(process.env.PORT || 5000,function() {
     console.log('We on');
 });
 
 module.exports = app;
+
+
+
+
+
+
+
+
+
+
+
+
+
