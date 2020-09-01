@@ -67,4 +67,4 @@ app.listen(process.env.PORT,function() {
     console.log('We on');
 });
 
-module.exports = pool;
+module.exports = app;
